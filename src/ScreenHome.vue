@@ -3,7 +3,10 @@
 <template>
   <main>
     <header>
-      <h1>Marina Feller</h1>
+      <div class="logo">
+        <img src="@/assets/mtf3.svg" alt="Logo" />
+        <h1>Marina Feller</h1>
+      </div>
     </header>
     <section class="intro">
       <h2>Hi, I'm Marina. I also go by Mari.</h2>
@@ -32,6 +35,14 @@ header {
   align-items: center;
   justify-content: start;
   padding: 16px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo img {
+  height: 32px;
 }
 h1 {
   font-size: 32px;

@@ -1,6 +1,6 @@
 import './styles.css'
 
 import { createApp } from 'vue'
-import Home from './Home.vue'
+import ScreenHome from './ScreenHome.vue'
 
-createApp(Home).mount('#app')
+createApp(ScreenHome).mount('#app')
