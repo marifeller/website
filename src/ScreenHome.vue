@@ -1,73 +1,39 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main>
-    <header>
-      <div class="logo">
-        <img src="@/assets/mtf3.svg" alt="Logo" />
-        <h1>Marina Feller</h1>
+  <section class="intro">
+    <h2>Hi, I'm Marina. I also go by Mari.</h2>
+    <h3>SOFTWARE ENGINEER - GRAD STUDENT - LINUX ENTHUSIAST</h3>
+    <div class="action-buttons">
+      <div class="gumdrop-button">
+        <button id="button-projects">
+          <span class="material-symbols-rounded"> deployed_code </span>
+        </button>
+        <h4>Projects</h4>
       </div>
-    </header>
-    <section class="intro">
-      <h2>Hi, I'm Marina. I also go by Mari.</h2>
-      <h3>SOFTWARE ENGINEER - GRAD STUDENT - LINUX ENTHUSIAST</h3>
-      <div class="action-buttons">
-        <div class="gumdrop-button">
-          <button id="button-projects">
-            <span class="material-symbols-rounded"> deployed_code </span>
-          </button>
-          <h4>Projects</h4>
-        </div>
-        <div class="gumdrop-button">
+      <div class="gumdrop-button">
+        <RouterLink to="/resume">
           <button id="button-resume">
             <span class="material-symbols-rounded"> article_person </span>
           </button>
-          <h4>Resume</h4>
-        </div>
-        <div class="gumdrop-button">
-          <button id="button-about"><span class="material-symbols-rounded"> mood </span></button>
-          <h4>About Me</h4>
-        </div>
-        <div class="gumdrop-button">
-          <button id="button-contact">
-            <span class="material-symbols-rounded"> alternate_email </span>
-          </button>
-          <h4>Contact</h4>
-        </div>
+        </RouterLink>
+        <h4>Resume</h4>
       </div>
-    </section>
-  </main>
+      <div class="gumdrop-button">
+        <button id="button-about"><span class="material-symbols-rounded"> mood </span></button>
+        <h4>About Me</h4>
+      </div>
+      <div class="gumdrop-button">
+        <button id="button-contact">
+          <span class="material-symbols-rounded"> alternate_email </span>
+        </button>
+        <h4>Contact</h4>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style scoped>
-main {
-  position: fixed;
-  background:
-    radial-gradient(ellipse farthest-side at bottom left, #007595, #312c8500),
-    radial-gradient(ellipse farthest-side at top right, #8a0194, #59168b00),
-    radial-gradient(ellipse farthest-corner at center, #3c0366, #00000000), black;
-  width: 100%;
-  height: 100%;
-}
-header {
-  position: sticky;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  padding: 16px;
-}
-.logo {
-  display: flex;
-  align-items: center33;
-  gap: 8px;
-}
-.logo img {
-  height: 32px;
-}
-h1 {
-  font-size: 32px;
-}
 .intro {
   position: relative;
   display: flex;
@@ -111,7 +77,7 @@ h3 {
   box-shadow: 0px 0px 16px rgb(255 255 255 / 75%) inset;
   color: white;
   cursor: pointer;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
 }
 .gumdrop-button button:hover {
   scale: 1.1;
