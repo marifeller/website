@@ -111,10 +111,20 @@ h3 {
   box-shadow: 0px 0px 16px rgb(255 255 255 / 75%) inset;
   color: white;
   cursor: pointer;
+  transition-duration: 0.2s;
+}
+.gumdrop-button button:hover {
+  scale: 1.1;
+}
+.gumdrop-button button:active {
+  scale: 0.9;
 }
 .gumdrop-button button span {
   font-size: 64px;
   text-shadow: 0px 4px 4px rgb(0 0 0 /25%);
+}
+.gumdrop-button h4 {
+  font-size: 24px;
 }
 #button-projects {
   background-color: #ff2056;
