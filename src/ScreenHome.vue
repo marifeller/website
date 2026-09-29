@@ -12,10 +12,28 @@
       <h2>Hi, I'm Marina. I also go by Mari.</h2>
       <h3>SOFTWARE ENGINEER - GRAD STUDENT - LINUX ENTHUSIAST</h3>
       <div class="action-buttons">
-        <button>Projects</button>
-        <button>Resume</button>
-        <button>About</button>
-        <button>Contact</button>
+        <div class="gumdrop-button">
+          <button id="button-projects">
+            <span class="material-symbols-rounded"> deployed_code </span>
+          </button>
+          <h4>Projects</h4>
+        </div>
+        <div class="gumdrop-button">
+          <button id="button-resume">
+            <span class="material-symbols-rounded"> article_person </span>
+          </button>
+          <h4>Resume</h4>
+        </div>
+        <div class="gumdrop-button">
+          <button id="button-about"><span class="material-symbols-rounded"> mood </span></button>
+          <h4>About Me</h4>
+        </div>
+        <div class="gumdrop-button">
+          <button id="button-contact">
+            <span class="material-symbols-rounded"> alternate_email </span>
+          </button>
+          <h4>Contact</h4>
+        </div>
       </div>
     </section>
   </main>
@@ -24,7 +42,10 @@
 <style scoped>
 main {
   position: fixed;
-  background: radial-gradient(darkslateblue, black);
+  background:
+    radial-gradient(ellipse farthest-side at bottom left, #007595, #312c8500),
+    radial-gradient(ellipse farthest-side at top right, #8a0194, #59168b00),
+    radial-gradient(ellipse farthest-corner at center, #3c0366, #00000000), black;
   width: 100%;
   height: 100%;
 }
@@ -38,7 +59,7 @@ header {
 }
 .logo {
   display: flex;
-  align-items: center;
+  align-items: center33;
   gap: 8px;
 }
 .logo img {
@@ -70,16 +91,41 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 32px;
-  max-width: 400px;
+  gap: 64px;
 }
-.action-buttons button {
-  padding: 16px 32px;
+.gumdrop-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.gumdrop-button button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1em;
   border: none;
-  border-radius: 32px;
-  background-color: #333;
+  border-radius: 64px;
+  background-color: transparent;
+  background-image: linear-gradient(rgb(255 255 255 / 25%), transparent, rgb(0 0 0 / 25%));
+  box-shadow: 0px 0px 16px rgb(255 255 255 / 75%) inset;
   color: white;
   cursor: pointer;
-  font-size: 24px;
+}
+.gumdrop-button button span {
+  font-size: 64px;
+  text-shadow: 0px 4px 4px rgb(0 0 0 /25%);
+}
+#button-projects {
+  background-color: #ff2056;
+}
+#button-resume {
+  background-color: #ffb900;
+}
+#button-about {
+  background-color: #00c950;
+}
+#button-contact {
+  background-color: #155dfc;
 }
 </style>
