@@ -79,18 +79,24 @@ h3 {
   cursor: pointer;
   transition-duration: 0.1s;
 }
+.gumdrop-button button span {
+  font-size: 64px;
+  text-shadow: 0px 4px 4px rgb(0 0 0 /25%);
+  color: white;
+  transition: 0.1s;
+}
+.gumdrop-button h4 {
+  font-size: 24px;
+}
 .gumdrop-button button:hover {
   scale: 1.1;
 }
 .gumdrop-button button:active {
-  scale: 0.9;
+  box-shadow: 0px 0px 16px rgb(0 0 0 / 75%) inset;
 }
-.gumdrop-button button span {
-  font-size: 64px;
-  text-shadow: 0px 4px 4px rgb(0 0 0 /25%);
-}
-.gumdrop-button h4 {
-  font-size: 24px;
+.gumdrop-button button:active span {
+  text-shadow: none;
+  color: #00000080;
 }
 #button-projects {
   background-color: #ff2056;
